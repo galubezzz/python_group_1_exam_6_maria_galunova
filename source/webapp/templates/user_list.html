@@ -3,7 +3,9 @@
 {% block menu %}
 {% endblock %}
 {% block content %}
-    {% for userinfo in userinfo_list %}
-    <h2><a href="{% url 'webapp:user_details' userinfo.pk %}">{{ userinfo.user }}</a></h2>
-    {% endfor %}
+    <ul class="list-unstyled">
+        {% for userinfo in userinfo_list %}
+            <li><a href="{% url 'webapp:user_details' userinfo.pk %}">{{ userinfo.user }}</a><br></li>
+        {% endfor %}
+    </ul>
 {% endblock %}

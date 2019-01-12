@@ -3,7 +3,7 @@
 {% block content %}
 
     <h3>{{ post.title }}</h3>
-    Текст: {{ post.text }} <br>
+    <p>{{ post.text }}</p>
     Автор: {{ post.author }} <br>
     Дата создания: {{ post.date }} <br>
     {% if post.author == request.user %}
