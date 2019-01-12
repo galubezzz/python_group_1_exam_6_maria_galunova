@@ -1,4 +1,5 @@
 from django.db import models
+from datetime import datetime
 from django.contrib.auth.models import User
 
 # Create your models here.
@@ -7,7 +8,7 @@ from django.contrib.auth.models import User
 class UserInfo(models.Model):
     user = models.OneToOneField(User, on_delete=models.PROTECT, related_name='UserInfo', verbose_name="Пользователь")
     phone = models.CharField(max_length=50, verbose_name="Телефон")
-    photo = models.ImageField(verbose_name='Фотография')
+    photo = models.ImageField(null=True, blank=True, verbose_name='Фотография')
     friends = models.ManyToManyField(User, blank=True, null=True, related_name="my_friends", verbose_name="Друзья")
 
     def __str__(self):
