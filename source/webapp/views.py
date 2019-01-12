@@ -2,8 +2,10 @@ from django.shortcuts import render
 from webapp.models import User, UserInfo, Post
 from django.views.generic import DetailView, ListView, CreateView, UpdateView, DeleteView
 from django.urls import reverse, reverse_lazy
-from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin
+from django.contrib.auth.mixins import LoginRequiredMixin
 from webapp.forms import PostForm, UserForm
+from django.shortcuts import get_object_or_404
+from django.http import HttpResponseRedirect
 
 class PostDetailView(DetailView):
     model = Post
@@ -36,11 +38,23 @@ class PostUpdateView(LoginRequiredMixin, UpdateView):
     form_class = PostForm
     success_url = reverse_lazy('webapp:posts')
 
+    def get(self, request, pk):
+        post = get_object_or_404(Post, pk=pk)
+        if post.author != self.request.user:
+            return HttpResponseRedirect(reverse('webapp:post_details', kwargs={'pk': pk}))
+        return super().get(request, pk=pk)
+
 
 class PostDeleteView(DeleteView):
     model = Post
     template_name = 'post_delete.html'
     success_url = reverse_lazy('webapp:posts')
+
+    def get(self, request, pk):
+        post = get_object_or_404(Post, pk=pk)
+        if post.author != self.request.user:
+            return HttpResponseRedirect(reverse('webapp:post_details', kwargs={'pk': pk}))
+        return super().get(request, pk=pk)
 
 class UserDetailView(DetailView):
     model = UserInfo
