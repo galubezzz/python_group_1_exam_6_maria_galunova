@@ -21,3 +21,9 @@ class PostCreateView(LoginRequiredMixin, CreateView):
 
     def get_success_url(self):
         return reverse('webapp:post_details', kwargs={'pk': self.object.pk})
+
+class PostUpdateView(LoginRequiredMixin, UpdateView):
+    model = Course
+    template_name = 'post_update.html'
+    form_class = CourseForm
+    success_url = reverse_lazy('webapp:posts')

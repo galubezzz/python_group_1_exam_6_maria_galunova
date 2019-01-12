@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}Изменить пост{% endblock %}
+
+{% block content %}
+    <h1>Изменить пост</h1>
+    <form action="{% url 'webapp:post_update' form.instance.pk %}" method="post" class="form-group" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-primary">Сохранить</button>
+    </form>
+{% endblock %}
