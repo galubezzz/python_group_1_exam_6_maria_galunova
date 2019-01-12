@@ -16,14 +16,14 @@ def login_view(request):
             return render(request, 'login.html', context=context)
         else:
             login(request, user=user)
-            return redirect('webapp:order_list')
+            return redirect('webapp:posts')
 
     return render(request, 'login.html')
 
 
 def logout_view(request):
     logout(request)
-    return redirect('auth:login')
+    return redirect('accounts:login')
 
 
 

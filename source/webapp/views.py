@@ -6,6 +6,8 @@ from django.urls import reverse, reverse_lazy
 class PostDetailView(DetailView):
     model = Post
     template_name = 'post_detail.html'
-    permission_required = 'webapp.view_order'
 
 
+class PostListView(ListView):
+    model = Post
+    template_name = 'post_list.html'
