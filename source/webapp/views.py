@@ -38,9 +38,9 @@ class PostUpdateView(LoginRequiredMixin, UpdateView):
     form_class = PostForm
 
     def get(self, request, pk):
-        post = get_object_or_404(Post, pk=pk)
-        if post.author != self.request.user:
-            return HttpResponseRedirect(reverse('webapp:post_details', kwargs={'pk': pk}))
+        user = get_object_or_404(Post, pk=pk)
+        if user.pk != self.request.user:
+            return HttpResponseRedirect(reverse('webapp:user_details', kwargs={'pk': pk}))
         return super().get(request, pk=pk)
 
     def get_success_url(self):

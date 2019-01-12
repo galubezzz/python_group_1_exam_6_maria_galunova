@@ -34,7 +34,7 @@
       </div>
     </div>
     {% if userinfo.user == request.user %}
-    <a href="{% url 'webapp:user_update' user.pk %}" class="nav-link">Редактировать</a>
+    <a href="{% url 'webapp:user_update' userinfo.user_id %}" class="nav-link">Редактировать</a>
     {% endif %}
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
