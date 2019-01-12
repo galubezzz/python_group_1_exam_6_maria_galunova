@@ -7,3 +7,7 @@ class PostForm(forms.ModelForm):
         model = Post
         exclude =['author']
 
+class UserForm(forms.ModelForm):
+    class Meta:
+        model = UserInfo
+        fields = ['phone', 'photo']

@@ -3,7 +3,7 @@ from webapp.models import User, UserInfo, Post
 from django.views.generic import DetailView, ListView, CreateView, UpdateView, DeleteView
 from django.urls import reverse, reverse_lazy
 from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin
-from webapp.forms import PostForm
+from webapp.forms import PostForm, UserForm
 
 class PostDetailView(DetailView):
     model = Post
@@ -42,6 +42,17 @@ class PostDeleteView(DeleteView):
     template_name = 'post_delete.html'
     success_url = reverse_lazy('webapp:posts')
 
-class UserDetailView(DeleteView):
+class UserDetailView(DetailView):
     model = UserInfo
-    template_name = "user_list.html"
+    template_name = "user_details.html"
+
+
+class UserListView(ListView):
+    model = User
+    template_name = 'user_list.html'
+
+class UserUpdateView(UpdateView):
+    model = UserInfo
+    template_name = 'user_update.html'
+    form_class = UserForm
+    success_url = reverse_lazy('webapp:user_details')

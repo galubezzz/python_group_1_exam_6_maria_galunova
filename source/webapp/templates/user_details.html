@@ -1,10 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'base.html' %}
+{% block title %}Пользователь (ирония){% endblock %}
+{% block content %}
 
-</body>
-</html>
+    <h3>{{ user.username }}</h3>
+    Фото: {{ userinfo.photo }} <br>
+    Друзья: {{ userinfo.friends }} <br>
+    <a href="{% url 'webapp:user_update' userinfo.user %}" class="nav-link">Редактировать</a>
+{% endblock %}

@@ -1,10 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-
-</body>
-</html>
+{% extends 'base.html' %}
+{% block title %}Пользователи{% endblock %}
+{% block menu %}
+{% endblock %}
+{% block content %}
+    {% for user in user_list %}
+    <h3><a href="{% url 'webapp:user_details' user.pk %}">{{ user.username }}</a> </h3>
+    {% endfor %}
+{% endblock %}
