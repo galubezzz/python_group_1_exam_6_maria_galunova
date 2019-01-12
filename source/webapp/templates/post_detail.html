@@ -6,4 +6,5 @@
     Текст: {{ post.text }} <br>
     Автор: {{ post.author }} <br>
     Дата создания: {{ post.date }} <br>
+    <a href="{% url 'webapp:post_delete' post.pk %}" class="nav-link">Удалить пост</a>
 {% endblock %}
