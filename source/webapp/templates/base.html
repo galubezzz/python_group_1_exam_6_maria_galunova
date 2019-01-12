@@ -22,6 +22,9 @@
         <ul class="navbar-nav">
             {% if request.user.is_authenticated %}
                 <li class="nav-item navbar-text">Привет, {{ request.user.username }}!</li>
+                 <li class="nav-item">
+                <a href="{% url 'webapp:post_create' %}" class="nav-link">Написать пост</a>
+                </li>
                 <li class="nav-item">
                     <a href="{% url 'accounts:logout' %}" class="nav-link">Выход</a>
                 </li>
