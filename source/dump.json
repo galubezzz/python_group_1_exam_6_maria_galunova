@@ -1,0 +1,624 @@
+[
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": [
+      "admin",
+      "logentry"
+    ],
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": [
+      "admin",
+      "logentry"
+    ],
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": [
+      "admin",
+      "logentry"
+    ],
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": [
+      "admin",
+      "logentry"
+    ],
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": [
+      "auth",
+      "permission"
+    ],
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": [
+      "auth",
+      "permission"
+    ],
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": [
+      "auth",
+      "permission"
+    ],
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": [
+      "auth",
+      "permission"
+    ],
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add group",
+    "content_type": [
+      "auth",
+      "group"
+    ],
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change group",
+    "content_type": [
+      "auth",
+      "group"
+    ],
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": [
+      "auth",
+      "group"
+    ],
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view group",
+    "content_type": [
+      "auth",
+      "group"
+    ],
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add user",
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change user",
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view user",
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": [
+      "contenttypes",
+      "contenttype"
+    ],
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": [
+      "contenttypes",
+      "contenttype"
+    ],
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": [
+      "contenttypes",
+      "contenttype"
+    ],
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": [
+      "contenttypes",
+      "contenttype"
+    ],
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add session",
+    "content_type": [
+      "sessions",
+      "session"
+    ],
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change session",
+    "content_type": [
+      "sessions",
+      "session"
+    ],
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": [
+      "sessions",
+      "session"
+    ],
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view session",
+    "content_type": [
+      "sessions",
+      "session"
+    ],
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add post",
+    "content_type": [
+      "webapp",
+      "post"
+    ],
+    "codename": "add_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change post",
+    "content_type": [
+      "webapp",
+      "post"
+    ],
+    "codename": "change_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete post",
+    "content_type": [
+      "webapp",
+      "post"
+    ],
+    "codename": "delete_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view post",
+    "content_type": [
+      "webapp",
+      "post"
+    ],
+    "codename": "view_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can add user info",
+    "content_type": [
+      "webapp",
+      "userinfo"
+    ],
+    "codename": "add_userinfo"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can change user info",
+    "content_type": [
+      "webapp",
+      "userinfo"
+    ],
+    "codename": "change_userinfo"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can delete user info",
+    "content_type": [
+      "webapp",
+      "userinfo"
+    ],
+    "codename": "delete_userinfo"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can view user info",
+    "content_type": [
+      "webapp",
+      "userinfo"
+    ],
+    "codename": "view_userinfo"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$120000$nSMZSH29Rsh0$PTiWy78KD+WN0PwMYcTHqyAL1TYASaAT+cabF0D/xlI=",
+    "last_login": "2019-01-12T13:46:07.308Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "a@a.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2019-01-12T05:22:13.239Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$120000$h1gzhAgYv4SQ$RGY/5qrOhn1fXQWbvO9PIOww2Qul0xQo/qMZWZFCv3E=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "totoro",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2019-01-12T06:33:25Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 3,
+  "fields": {
+    "password": "pbkdf2_sha256$120000$RPGaf2vO7Mpj$4fdr24f8EJ94YDCB6fT4XEWdo1mYqI11rYJFXJXzgzA=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "haku",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2019-01-12T06:36:04Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 4,
+  "fields": {
+    "password": "pbkdf2_sha256$120000$fStvjihOwD3F$2qtPljzFkU05WdpydLuaN73m4oRqJiajtg3PAb2+73o=",
+    "last_login": "2019-01-12T08:19:15.355Z",
+    "is_superuser": false,
+    "username": "zeniba",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2019-01-12T06:39:28Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 5,
+  "fields": {
+    "password": "pbkdf2_sha256$120000$32hW0YI5qFLl$C/eVKyY5t25imphp/pNMG+uvyv51XZDjb3NGPwCZURY=",
+    "last_login": "2019-01-12T13:47:48.915Z",
+    "is_superuser": false,
+    "username": "kamaji",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2019-01-12T06:44:44Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "webapp.post",
+  "pk": 1,
+  "fields": {
+    "title": "Inspiration",
+    "text": "Every summer, Hayao Miyazaki spent his vacation at a mountain cabin with his family and five girls who were friends of the family. The idea for Spirited Away came about when he wanted to make a film for these friends. Miyazaki had previously directed films for small children and teenagers such as My Neighbor Totoro and Kiki's Delivery Service, but he had not created a film for 10-year-old girls. For inspiration, he read sh\u014djo manga magazines like Nakayoshi and Ribon the girls had left at the cabin, but felt they only offered subjects on \"crushes\" and romance. When looking at his young friends, Miyazaki felt this was not what they \"held dear in their hearts\" and decided to produce the film about a girl heroine whom they could look up to instead",
+    "date": "2019-01-12T06:47:16Z",
+    "author": [
+      "kamaji"
+    ]
+  }
+},
+{
+  "model": "webapp.post",
+  "pk": 2,
+  "fields": {
+    "title": "Production",
+    "text": "Production of Spirited Away commenced in 2000 on a budget of \u00a51.9 billion ($15 million).[2] Disney invested 10% of the cost for the right of first refusal for American distribution.[18] As with Princess Mononoke, Miyazaki and the Studio Ghibli staff experimented with computer animation. With the use of more computers and programs such as Softimage, the staff learned the software, but used the technology carefully so that it enhanced the story, instead of 'stealing the show'. Each character was mostly hand-drawn, with Miyazaki working alongside his animators to see they were getting it just right.[2] The biggest difficulty in making the film was to reduce its length. When production started, Miyazaki realized it would be more than three hours long if he made it according to his plot. He had to delete many scenes from the story, and tried to reduce the \"eye-candy\" in the film because he wanted it to be simple. Miyazaki did not want to make the hero a \"pretty girl.\" At the beginning, he was frustrated at how she looked \"dull\" and thought, \"She isn't cute. Isn't there something we can do?\" As the film neared the end, however, he was relieved to feel \"she will be a charming woman.\"[17]",
+    "date": "2019-01-12T06:48:03Z",
+    "author": [
+      "zeniba"
+    ]
+  }
+},
+{
+  "model": "webapp.post",
+  "pk": 3,
+  "fields": {
+    "title": "Music",
+    "text": "The film score of Spirited Away was composed and conducted by Miyazaki's regular collaborator Joe Hisaishi, and performed by the New Japan Philharmonic.[22] The soundtrack received awards at the 56th Mainichi Film Competition Award for Best Music, the Tokyo International Anime Fair 2001 Best Music Award in the Theater Movie category, and the 17th Japan Gold Disk Award for Animation Album of the Year.[23][24][25] Later, Hisaishi added lyrics to \"One Summer's Day\" and named the new version \"The Name of Life\" (\u3044\u306e\u3061\u306e\u540d\u524d \"Inochi no Namae\") which was performed by Ayaka Hirahara.[26]\r\n\r\nThe closing song, \"Always With Me\" (\u3044\u3064\u3082\u4f55\u5ea6\u3067\u3082 Itsumo Nando Demo, literally, \"Always, No Matter How Many Times\") was written and performed by Youmi Kimura, a composer and lyre-player from Osaka.[27] The lyrics were written by Kimura's friend Wakako Kaku. The song was intended to be used for Rin the Chimney Painter (\u7159\u7a81\u63cf\u304d\u306e\u30ea\u30f3 Entotsu-kaki no Rin), a different Miyazaki film which was never released.[27] In the special features of the Japanese DVD, Hayao Miyazaki explains how the song in fact inspired him to create Spirited Away.[27] The song itself would be recognized as Gold at the 43rd Japan Record Awards.[28]\r\n\r\nBesides the original soundtrack, there is also an image album, titled Spirited Away Image Album (\u5343\u3068\u5343\u5c0b\u306e\u795e\u96a0\u3057\u3000\u30a4\u30e1\u30fc\u30b8\u30a2\u30eb\u30d0\u30e0 Sen to Chihiro no Kamikakushi Im\u0113ji Arubamu), that contains 10 tracks.",
+    "date": "2019-01-12T06:48:38Z",
+    "author": [
+      "haku"
+    ]
+  }
+},
+{
+  "model": "webapp.post",
+  "pk": 4,
+  "fields": {
+    "title": "Receiption",
+    "text": "My Neighbor Totoro has received widespread acclaim from film critics. Review aggregator Rotten Tomatoes reported that 94% of critics gave positive reviews, with an average rating of 8.4/10 based on 48 reviews. The website's critical consensus states, My Neighbor Totoro is a heartwarming, sentimental masterpiece that captures the simple grace of childhood.\"[25] On Metacritic, the film has a weighted average rating of 86 out of 100, based on 15 critics, indicating \"universal acclaim\". The film is listed as a \"Metacritic must-see\".[26] My Neighbor Totoro was voted the highest-ranking animated film on the 2012 Sight & Sound critics' poll of all-time greatest films.[7]\r\n\r\nFilm critic Roger Ebert of the Chicago Sun-Times identified My Neighbor Totoro as one of his \"Great Movies\", calling it \"one of the lovingly hand-crafted works of Hayao Miyazaki\". In his review, Ebert declared \"My Neighbor Totoro is based on experience, situation and exploration\u2014not on conflict and threat\", and described its appeal:\r\n\r\n... it would never have won its worldwide audience just because of its warm heart. It is also rich with human comedy in the way it observes the two remarkably convincing, lifelike little girls.... It is a little sad, a little scary, a little surprising and a little informative, just like life itself. It depends on a situation instead of a plot, and suggests that the wonder of life and the resources of imagination supply all the adventure you need.[27]",
+    "date": "2019-01-12T06:49:01Z",
+    "author": [
+      "totoro"
+    ]
+  }
+},
+{
+  "model": "webapp.post",
+  "pk": 5,
+  "fields": {
+    "title": "Themes",
+    "text": "The themes of the film are heavily influenced by Japanese Shinto-Buddhist folklore. The central location of the film is a Japanese bathhouse where a great variety of Japanese folklore creatures, including kami, come to bathe. Miyazaki cites the solstice rituals when villagers call forth their local kami and invite them into their baths.[7]\r\n\r\nChihiro also encounters kami of animals and plants. Miyazaki says of this: \"In my grandparents' time, it was believed that kami existed everywhere -- in trees, rivers, insects, wells, anything. My generation does not believe this, but I like the idea that we should all treasure everything because spirits might exist there, and we should treasure everything because there is a kind of life to everything.\"[7]\r\n\r\nThe film has been compared to Lewis Carroll's Alice's Adventures in Wonderland as the stories have some elements in common such being set in a fantasy world, the plots including a disturbance in logic and stability, and there being motifs such as food having transformational qualities; though developments and themes are not shared.[31][32] Among other stories compared to Spirited Away, The Wonderful Wizard of Oz is seen to be more closely linked thematically.[32]\r\n\r\nThe major themes of Spirited Away center on the protagonist Chihiro and her liminal journey through the realm of spirits. The archetypal entrance into another world demarcates Chihiro's status as one somewhere between child and adult. Chihiro also stands outside societal boundaries in the supernatural setting. The use of the word kamikakushi (literally \"hidden by gods\") within the Japanese title, and its associated folklore, reinforces this liminal passage: \"Kamikakushi is a verdict of 'social death' in this world, and coming back to this world from Kamikakushi meant 'social resurrection.'\"[33]",
+    "date": "2019-01-12T06:50:04Z",
+    "author": [
+      "zeniba"
+    ]
+  }
+},
+{
+  "model": "webapp.post",
+  "pk": 6,
+  "fields": {
+    "title": "Box office",
+    "text": "Spirited Away was released theatrically in Japan on 20 July 2001 by distributor Toho, grossing \u00a530.4 billion to become the highest-grossing film in Japanese history, according to the Motion Picture Producers Association of Japan.[43] It was also the first film to earn $200 million at the worldwide box office before opening in the United States.[44] The film was dubbed into English by Walt Disney Pictures, under the supervision of Pixar's John Lasseter. The dubbed version premiered at the Toronto International Film Festival on 7 September 2002[45] and was later released in North America on 20 September 2002. Spirited Away had very little marketing, less than Disney's other B-films, with at most, 151 theaters showing the film in 2002.[18] After the 2003 Oscars, it expanded to as many as 714 theaters. The film grossed US$4 million in its opening weekend and ultimately grossed around $10 million by September 2003.[46] Outside of Japan and the United States, the movie was moderately successful in both South Korea and France where it grossed $11 million and $6 million, respectively. Combined profits from other countries gave the movie a worldwide total of about $289 million.[5] In Argentina, it is in the Top 10 of anime films with the most tickets sold.[47]",
+    "date": "2019-01-12T06:50:36Z",
+    "author": [
+      "zeniba"
+    ]
+  }
+},
+{
+  "model": "webapp.userinfo",
+  "pk": 1,
+  "fields": {
+    "user": [
+      "totoro"
+    ],
+    "phone": "937 99 92",
+    "photo": "totoro.jpg",
+    "friends": [
+      [
+        "admin"
+      ]
+    ]
+  }
+},
+{
+  "model": "webapp.userinfo",
+  "pk": 2,
+  "fields": {
+    "user": [
+      "haku"
+    ],
+    "phone": "123 34 45",
+    "photo": "haku.png",
+    "friends": [
+      [
+        "totoro"
+      ],
+      [
+        "haku"
+      ],
+      [
+        "kamaji"
+      ]
+    ]
+  }
+},
+{
+  "model": "webapp.userinfo",
+  "pk": 3,
+  "fields": {
+    "user": [
+      "zeniba"
+    ],
+    "phone": "125 23 54",
+    "photo": "zeniba.jpeg",
+    "friends": [
+      [
+        "totoro"
+      ],
+      [
+        "haku"
+      ]
+    ]
+  }
+},
+{
+  "model": "webapp.userinfo",
+  "pk": 4,
+  "fields": {
+    "user": [
+      "kamaji"
+    ],
+    "phone": "345 56 21",
+    "photo": "kamaji.jpeg",
+    "friends": [
+      [
+        "totoro"
+      ],
+      [
+        "haku"
+      ]
+    ]
+  }
+}
+]
