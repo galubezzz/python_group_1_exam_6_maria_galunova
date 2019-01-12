@@ -41,3 +41,7 @@ class PostDeleteView(DeleteView):
     model = Post
     template_name = 'post_delete.html'
     success_url = reverse_lazy('webapp:posts')
+
+class UserDetailView(DeleteView):
+    model = UserInfo
+    template_name = "user_list.html"
