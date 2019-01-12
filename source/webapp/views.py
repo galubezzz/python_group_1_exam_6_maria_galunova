@@ -56,17 +56,33 @@ class PostDeleteView(DeleteView):
             return HttpResponseRedirect(reverse('webapp:post_details', kwargs={'pk': pk}))
         return super().get(request, pk=pk)
 
+
 class UserDetailView(DetailView):
     model = UserInfo
     template_name = "user_details.html"
 
+    def get_context_data(self, **kwargs):
+        context = super(UserDetailView, self).get_context_data(**kwargs)
+        context['posts'] = self.object.user.posts_by_user.all().order_by('-date')
+        return context
+
+
 
 class UserListView(ListView):
-    model = User
+    model = UserInfo
     template_name = 'user_list.html'
+
 
 class UserUpdateView(UpdateView):
     model = UserInfo
     template_name = 'user_update.html'
     form_class = UserForm
-    success_url = reverse_lazy('webapp:user_details')
+
+    def get_success_url(self):
+        return reverse('webapp:user_detail', kwargs={'pk': self.object.pk})
+
+    def get(self, request, pk):
+        user = get_object_or_404(Post, pk=pk)
+        if user.pk != self.request.user:
+            return HttpResponseRedirect(reverse('webapp:user_details', kwargs={'pk': pk}))
+        return super().get(request, pk=pk)

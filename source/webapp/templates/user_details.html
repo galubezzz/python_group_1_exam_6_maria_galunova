@@ -1,12 +1,30 @@
 {% extends 'base.html' %}
-{% block title %}Пользователь (ирония){% endblock %}
+{% block title %}Пользователь {% endblock %}
 {% block content %}
-
-    <h3>{{ user.username }}</h3>
+    <h3>{{ userinfo.user }}</h3>
     Телефон: <a href="#" id="link">Показать телефон</a> <span id="phone">{{ userinfo.phone }}</span><br>
-    Фото: {{ usernfo.photo }} <br>
-    Друзья: {{ userinfo.friends }} <br>
+    <img class="user_photo" src="{{ userinfo.photo.url }}" alt="user photo"> <br>
+    <nav>
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Друзья</a>
+            <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Посты</a>
+        </div>
+    </nav>
+        <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                {% for friend in userinfo.friends.all %}
+                    {{ friend }}<br>
+                {% endfor %}
+            </div>
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                {% for post in posts.all %}
+                    {{ post.title }}<br>
+                {% endfor %}
+            </div>
+        </div>
+    {% if userinfo.user == request.user %}
     <a href="{% url 'webapp:user_update' user.pk %}" class="nav-link">Редактировать</a>
+    {% endif %}
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>

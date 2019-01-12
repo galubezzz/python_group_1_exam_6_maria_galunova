@@ -6,6 +6,8 @@
     Текст: {{ post.text }} <br>
     Автор: {{ post.author }} <br>
     Дата создания: {{ post.date }} <br>
+    {% if post.author == request.user %}
     <a href="{% url 'webapp:post_update' post.pk %}" class="nav-link">Редактировать пост</a>
     <a href="{% url 'webapp:post_delete' post.pk %}" class="nav-link">Удалить пост</a>
+    {% endif %}
 {% endblock %}

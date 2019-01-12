@@ -3,7 +3,7 @@
 {% block menu %}
 {% endblock %}
 {% block content %}
-    {% for user in user_list %}
-    <h3><a href="{% url 'webapp:user_details' user.pk %}">{{ user.username }}</a> </h3>
+    {% for userinfo in userinfo_list %}
+    <h2><a href="{% url 'webapp:user_details' userinfo.pk %}">{{ userinfo.user }}</a></h2>
     {% endfor %}
 {% endblock %}
